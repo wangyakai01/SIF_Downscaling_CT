@@ -79,10 +79,10 @@ for (var i = 0; i < dateStrings.length; i++) {
     .reproject({ crs: modisProjection_ori })
     .rename('Ratio');
 
-  // --- Compute downscaled SIF_RE (in W m⁻² sr⁻¹ µm⁻¹) ---
+  // --- Compute downscaled SIF_RE (in mW m-2 sr-1 nm-1) ---
   var sif_re = NIRv_ori.mean()
     .multiply(ratioimage)
-    .divide(1000) 
+    .divide(1000) //Scale factor
     .rename('SIF_RE')
     .resample('bilinear') // Maintain smoothness after multiplication
     .reproject({ crs: modisProjection_ori });
