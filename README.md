@@ -2,7 +2,7 @@
 **Downscaling of TROPOMI SIF using MODIS MCD43A4 NIRv for Connecticut**
 
 This repository contains Earth Engine scripts and documentation for downscaling
-TROPOMI Solar-Induced Fluorescence (SIF) data from ~7 km to 500 m resolution
+TROPOMI Solar-Induced chlorophyll Fluorescence (SIF) data from ~7 km to 500 m resolution
 using MODIS MCD43A4 NIRv as a spatial predictor.
 
 ---
