@@ -1,9 +1,9 @@
 # SIF_Downscaling_CT
-**Downscaling of TROPOMI SIF using MODIS MCD43A4 NDVI for Connecticut**
+**Downscaling of TROPOMI SIF using MODIS MCD43A4 NIRv for Connecticut**
 
 This repository contains Earth Engine scripts and documentation for downscaling
 TROPOMI Solar-Induced Fluorescence (SIF) data from ~7 km to 500 m resolution
-using MODIS MCD43A4 NDVI as a spatial predictor.
+using MODIS MCD43A4 NIRv as a spatial predictor.
 
 ---
 
@@ -16,7 +16,7 @@ data to produce high-resolution SIF estimates (SIF_RE) for Connecticut:
    \[
    NIRv = ((NIR - RED) \times NIR) / (NIR + RED)
    \]
-2. Bilinearly resample NDVI to match the SIF projection.
+2. Bilinearly resample NIRv to match the SIF projection.
 3. Compute ratio \( R = SIF / NIRv \).
 4. Downscale SIF:
    \[
